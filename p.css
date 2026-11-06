@@ -1366,3 +1366,733 @@ img {
   line-height: 24px;
   color: #E6E6EE;
 }
+
+
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-burger {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .steps h2,
+  .steps-row,
+  .blog-row,
+  .newsletter,
+  .faq,
+  .footer-content {
+    width: 90%;
+    max-width: 1312px;
+  }
+
+  .step-card,
+  .blog-card {
+    flex: 1;
+    width: auto;
+  }
+
+  .step-card {
+    height: auto;
+  }
+
+  .blog-card {
+    height: auto;
+    padding-bottom: 70px;
+  }
+
+  .blog-card h3 {
+    width: calc(100% - 60px);
+  }
+
+  .newsletter-form input {
+    width: 320px;
+  }
+
+  .faq-list {
+    width: 62%;
+  }
+
+  .faq-answer {
+    width: 100%;
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-left {
+    margin-left: 5%;
+    gap: 20px;
+  }
+
+  .nav-right {
+    margin-right: 5%;
+  }
+
+  .nav-links {
+    gap: 36px;
+  }
+
+  .language {
+    margin-right: 20px;
+  }
+
+  .login-button,
+  .signup-button {
+    left: 0;
+  }
+
+  .hero-text {
+    left: 8%;
+  }
+
+  .hero-text h1 {
+    width: 520px;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: -2px;
+  }
+
+  .flag-strip {
+    width: 520px;
+  }
+
+  .hero-woman {
+    right: 3%;
+    height: 680px;
+  }
+
+  .hero-card {
+    left: 38%;
+    width: 270px;
+  }
+
+  .money-text {
+    left: 6%;
+  }
+
+  .money-text h2 {
+    width: 460px;
+    font-size: 54px;
+    line-height: 58px;
+    letter-spacing: -3px;
+  }
+
+  .money-text p {
+    width: 380px;
+  }
+
+  .money-visual {
+    left: 56%;
+  }
+
+  .audience-top {
+    padding: 0 6%;
+  }
+
+  .audience-row {
+    margin-left: 6%;
+  }
+
+  .audience-card {
+    width: 70vw;
+  }
+
+  .feature-label {
+    left: 8%;
+  }
+
+  .reviews {
+    width: 86%;
+  }
+
+  .partner-logos {
+    width: 86%;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 16px 5%;
+  }
+
+  .nav-left {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .nav-burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .nav-burger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #1D1B3A;
+  }
+
+  .nav-links,
+  .nav-right {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0 8px;
+  }
+
+  .nav-toggle:checked ~ .nav-right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin: 0;
+    padding: 16px 0;
+  }
+
+  .has-menu:hover .menu {
+    display: none;
+  }
+
+  .language {
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+
+  .language-menu {
+    left: 0;
+  }
+
+  .login-button,
+  .signup-button {
+    justify-content: center;
+    margin-left: 0;
+    height: 46px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 40px 6% 0;
+  }
+
+  .hero-text {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  .flag-strip {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .hero-text h1 {
+    width: auto;
+    margin-top: 24px;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    width: auto;
+    max-width: 420px;
+  }
+
+  .hero-buttons {
+    margin-top: 32px;
+  }
+
+  .hero-woman {
+    position: relative;
+    top: auto;
+    right: auto;
+    height: auto;
+    width: 80%;
+    max-width: 440px;
+    margin: 30px auto 0;
+  }
+
+  .hero-card {
+    top: auto;
+    bottom: 40px;
+    left: 6%;
+    width: 240px;
+  }
+
+  .trust-section {
+    min-height: 0;
+    padding-bottom: 20px;
+  }
+
+  .trust-title {
+    padding: 0 6%;
+    line-height: 1.6;
+  }
+
+  .partner-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px 36px;
+    width: 90%;
+  }
+
+  .trust-heading {
+    margin-top: 80px;
+    padding: 0 6%;
+  }
+
+  .trust-heading h2 {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -1px;
+  }
+
+  .trust-heading p {
+    font-size: 18px;
+  }
+
+  .reviews {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .review-card {
+    min-height: 0;
+  }
+
+  .video-thumb {
+    height: 320px;
+  }
+
+  .play-icon {
+    top: 50%;
+    margin-top: -20px;
+  }
+
+  .feature-label {
+    top: 8%;
+    left: 8%;
+    font-size: 20px;
+  }
+
+  .feature .feature-text {
+    left: 8%;
+    right: 8%;
+    top: auto;
+    bottom: 8%;
+    width: auto;
+    z-index: 2;
+  }
+
+  .feature-text h2 {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: -1.5px;
+  }
+
+  .feature .floating-image {
+    left: 50%;
+    top: 18%;
+    width: 240px;
+    transform: translateX(-50%);
+  }
+
+  .feature-cards .floating-image {
+    width: 280px;
+  }
+
+  .notification {
+    left: 8%;
+    right: 8%;
+    top: 22%;
+    width: auto;
+  }
+
+  .audience {
+    padding: 60px 0;
+  }
+
+  .audience-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0 6%;
+    margin-bottom: 30px;
+  }
+
+  .audience-top h2 {
+    font-size: 34px;
+    letter-spacing: -1.5px;
+  }
+
+  .audience-tabs {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .audience-row {
+    margin-left: 6%;
+  }
+
+  .audience-card {
+    width: 84vw;
+    height: 440px;
+  }
+
+  .audience-card h3 {
+    top: 32px;
+    left: 28px;
+  }
+
+  .audience-card p {
+    left: 28px;
+    bottom: 32px;
+    width: calc(100% - 56px);
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .business-banner {
+    height: auto;
+    padding: 64px 24px;
+    margin-top: 60px;
+    border-radius: 28px;
+  }
+
+  .business-banner h2 {
+    font-size: 38px;
+    letter-spacing: -1.5px;
+  }
+
+  .business-banner p {
+    margin-bottom: 36px;
+    font-size: 16px;
+  }
+
+  .business-banner p br {
+    display: none;
+  }
+
+  .money {
+    height: 900px;
+  }
+
+  .money-text {
+    top: 60px;
+    left: 6%;
+    right: 6%;
+  }
+
+  .money-text h2 {
+    width: auto;
+    font-size: 42px;
+    line-height: 46px;
+    letter-spacing: -2px;
+  }
+
+  .money-text p {
+    width: auto;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .money-visual {
+    top: 400px;
+    left: 50%;
+    margin-left: -220px;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+
+  .logo-section {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 0;
+    gap: 20px;
+  }
+
+  .side-logos {
+    width: 90%;
+    max-width: 390px;
+    gap: 16px;
+  }
+
+  .side-logos img {
+    width: 100px;
+    height: 55px;
+  }
+
+  .card-fan {
+    flex-shrink: 0;
+    transform: scale(0.8);
+    margin: -44px 0;
+  }
+
+  .word-section {
+    padding: 60px 0;
+  }
+
+  .word-list span {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  .word-section h3 {
+    width: 88%;
+    max-width: 520px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .word-section p {
+    width: 88%;
+    max-width: 420px;
+  }
+
+  .steps h2 {
+    margin-bottom: 40px;
+    font-size: 34px;
+  }
+
+  .steps-row {
+    flex-direction: column;
+  }
+
+  .step-top {
+    height: 330px;
+  }
+
+  .signup-img,
+  .verify-img,
+  .accounts-img {
+    max-width: 90%;
+    object-fit: contain;
+  }
+
+  .step-bottom {
+    height: auto;
+    padding-bottom: 28px;
+  }
+
+  .step-bottom p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .blog {
+    padding: 60px 0;
+  }
+
+  .blog h2 {
+    padding: 0 6%;
+    font-size: 28px;
+  }
+
+  .blog-row {
+    flex-direction: column;
+  }
+
+  .blog-img {
+    height: 230px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .newsletter-button {
+    justify-content: center;
+  }
+
+  .press h2 {
+    padding: 0 6%;
+    font-size: 28px;
+  }
+
+  .press-logos {
+    flex-wrap: wrap;
+    gap: 28px 40px;
+    padding: 0 6%;
+  }
+
+  .faq {
+    flex-direction: column;
+    margin-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .faq h2 {
+    width: auto;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .faq-list {
+    width: 100%;
+  }
+
+  .footer {
+    padding-bottom: 120px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-nav {
+    justify-content: flex-start;
+    gap: 30px 0;
+  }
+
+  .footer-column {
+    width: 50%;
+  }
+
+  .footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+    gap: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 90px;
+  }
+
+  .nav-left {
+    gap: 12px;
+  }
+
+  .pill {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+  .hero-card {
+    width: 200px;
+    bottom: 24px;
+  }
+
+  .trust-heading h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .video-thumb {
+    height: 240px;
+  }
+
+  .feature-text h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .feature-text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .feature .floating-image {
+    top: 16%;
+    width: 200px;
+  }
+
+  .feature-cards .floating-image {
+    width: 230px;
+  }
+
+  .audience-card {
+    height: 400px;
+  }
+
+  .business-banner h2 {
+    font-size: 32px;
+  }
+
+  .money {
+    height: 780px;
+  }
+
+  .money-text h2 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  .money-visual {
+    top: 360px;
+    margin-left: -165px;
+    transform: scale(0.6);
+  }
+
+  .card-fan {
+    transform: scale(0.52);
+    margin: -105px 0;
+  }
+
+  .word-list span {
+    font-size: 34px;
+  }
+
+  .word-section h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .step-top {
+    height: 300px;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+}
